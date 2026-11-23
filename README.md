@@ -29,7 +29,7 @@ A análise considera:
 ## 🏗️ Arquitetura do projeto
 
 ```text
-teoria/
+teoria-da-computacao/
 │
 ├── gerador/                    # Gerador determinístico das entradas
 ├── entradas/                   # 150 vetores persistidos e compartilhados
