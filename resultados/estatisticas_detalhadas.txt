@@ -1,0 +1,2311 @@
+================================================================================
+RELATÓRIO DE ESTATÍSTICAS DETALHADAS
+Análise de Complexidade - Quick Sort × Merge Sort
+================================================================================
+
+Cada observação representa a ordenação de um bloco com dez vetores.
+As estatísticas por vetor correspondem ao tempo do bloco dividido por dez.
+
+================================================================================
+LINGUAGEM: C
+================================================================================
+
+ALGORITMO: QUICK SORT
+--------------------------------------------------------------------------------
+
+ALEATÓRIA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000053461 segundos (0.053461 ms)
+    Desvio-padrão amostral:   0.000014914 segundos (0.014914 ms)
+    Coeficiente de variação:  27.90%
+    IC95% da média:           [0.000046481, 0.000060441] segundos
+    Mediana:                  0.000049646 segundos
+    Primeiro quartil (Q1):    0.000044601 segundos
+    Terceiro quartil (Q3):    0.000054413 segundos
+    Intervalo interquartil:   0.000009812 segundos
+    Mínimo:                   0.000044161 segundos
+    Máximo:                   0.000107732 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000053197 segundos (0.053197 ms)
+    Desvio-padrão amostral:   0.000014351 segundos (0.014351 ms)
+    Coeficiente de variação:  26.98%
+    IC95% da média:           [0.000046481, 0.000059914] segundos
+    Mediana:                  0.000049545 segundos
+    Primeiro quartil (Q1):    0.000044550 segundos
+    Terceiro quartil (Q3):    0.000054107 segundos
+    Intervalo interquartil:   0.000009557 segundos
+    Mínimo:                   0.000044100 segundos
+    Máximo:                   0.000104830 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000534607 segundos
+    Desvio-padrão amostral:   0.000149141 segundos
+    Mediana:                  0.000496457 segundos
+    Mínimo:                   0.000441606 segundos
+    Máximo:                   0.001077315 segundos
+
+  Razão CPU/tempo real:       0.995062
+
+ALEATÓRIA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000280690 segundos (0.280690 ms)
+    Desvio-padrão amostral:   0.000119353 segundos (0.119353 ms)
+    Coeficiente de variação:  42.52%
+    IC95% da média:           [0.000224831, 0.000336549] segundos
+    Mediana:                  0.000238058 segundos
+    Primeiro quartil (Q1):    0.000226890 segundos
+    Terceiro quartil (Q3):    0.000253463 segundos
+    Intervalo interquartil:   0.000026572 segundos
+    Mínimo:                   0.000222413 segundos
+    Máximo:                   0.000672079 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000280500 segundos (0.280500 ms)
+    Desvio-padrão amostral:   0.000119342 segundos (0.119342 ms)
+    Coeficiente de variação:  42.55%
+    IC95% da média:           [0.000224646, 0.000336354] segundos
+    Mediana:                  0.000237800 segundos
+    Primeiro quartil (Q1):    0.000226708 segundos
+    Terceiro quartil (Q3):    0.000253313 segundos
+    Intervalo interquartil:   0.000026605 segundos
+    Mínimo:                   0.000222150 segundos
+    Máximo:                   0.000671870 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.002806903 segundos
+    Desvio-padrão amostral:   0.001193533 segundos
+    Mediana:                  0.002380583 segundos
+    Mínimo:                   0.002224130 segundos
+    Máximo:                   0.006720791 segundos
+
+  Razão CPU/tempo real:       0.999323
+
+ALEATÓRIA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001191032 segundos (1.191032 ms)
+    Desvio-padrão amostral:   0.000133321 segundos (0.133321 ms)
+    Coeficiente de variação:  11.19%
+    IC95% da média:           [0.001128636, 0.001253428] segundos
+    Mediana:                  0.001153606 segundos
+    Primeiro quartil (Q1):    0.001112151 segundos
+    Terceiro quartil (Q3):    0.001220647 segundos
+    Intervalo interquartil:   0.000108496 segundos
+    Mínimo:                   0.001075885 segundos
+    Máximo:                   0.001665073 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001190416 segundos (1.190416 ms)
+    Desvio-padrão amostral:   0.000133421 segundos (0.133421 ms)
+    Coeficiente de variação:  11.21%
+    IC95% da média:           [0.001127974, 0.001252859] segundos
+    Mediana:                  0.001153150 segundos
+    Primeiro quartil (Q1):    0.001111742 segundos
+    Terceiro quartil (Q3):    0.001220310 segundos
+    Intervalo interquartil:   0.000108568 segundos
+    Mínimo:                   0.001075580 segundos
+    Máximo:                   0.001664790 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.011910321 segundos
+    Desvio-padrão amostral:   0.001333209 segundos
+    Mediana:                  0.011536061 segundos
+    Mínimo:                   0.010758850 segundos
+    Máximo:                   0.016650732 segundos
+
+  Razão CPU/tempo real:       0.999483
+
+CRESCENTE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000375422 segundos (0.375422 ms)
+    Desvio-padrão amostral:   0.000037136 segundos (0.037136 ms)
+    Coeficiente de variação:  9.89%
+    IC95% da média:           [0.000358041, 0.000392802] segundos
+    Mediana:                  0.000363705 segundos
+    Primeiro quartil (Q1):    0.000348708 segundos
+    Terceiro quartil (Q3):    0.000393058 segundos
+    Intervalo interquartil:   0.000044350 segundos
+    Mínimo:                   0.000333575 segundos
+    Máximo:                   0.000477226 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000375081 segundos (0.375081 ms)
+    Desvio-padrão amostral:   0.000037054 segundos (0.037054 ms)
+    Coeficiente de variação:  9.88%
+    IC95% da média:           [0.000357739, 0.000392423] segundos
+    Mediana:                  0.000363550 segundos
+    Primeiro quartil (Q1):    0.000348587 segundos
+    Terceiro quartil (Q3):    0.000392220 segundos
+    Intervalo interquartil:   0.000043633 segundos
+    Mínimo:                   0.000333250 segundos
+    Máximo:                   0.000477000 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.003754216 segundos
+    Desvio-padrão amostral:   0.000371362 segundos
+    Mediana:                  0.003637049 segundos
+    Mínimo:                   0.003335745 segundos
+    Máximo:                   0.004772264 segundos
+
+  Razão CPU/tempo real:       0.999092
+
+CRESCENTE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.005973386 segundos (5.973386 ms)
+    Desvio-padrão amostral:   0.000466405 segundos (0.466405 ms)
+    Coeficiente de variação:  7.81%
+    IC95% da média:           [0.005755102, 0.006191670] segundos
+    Mediana:                  0.005855269 segundos
+    Primeiro quartil (Q1):    0.005676448 segundos
+    Terceiro quartil (Q3):    0.006050939 segundos
+    Intervalo interquartil:   0.000374491 segundos
+    Mínimo:                   0.005501688 segundos
+    Máximo:                   0.007340015 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.005972110 segundos (5.972110 ms)
+    Desvio-padrão amostral:   0.000466810 segundos (0.466810 ms)
+    Coeficiente de variação:  7.82%
+    IC95% da média:           [0.005753636, 0.006190584] segundos
+    Mediana:                  0.005853545 segundos
+    Primeiro quartil (Q1):    0.005675015 segundos
+    Terceiro quartil (Q3):    0.006049327 segundos
+    Intervalo interquartil:   0.000374312 segundos
+    Mínimo:                   0.005498840 segundos
+    Máximo:                   0.007339690 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.059733863 segundos
+    Desvio-padrão amostral:   0.004664046 segundos
+    Mediana:                  0.058552686 segundos
+    Mínimo:                   0.055016885 segundos
+    Máximo:                   0.073400149 segundos
+
+  Razão CPU/tempo real:       0.999786
+
+CRESCENTE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.106130275 segundos (106.130275 ms)
+    Desvio-padrão amostral:   0.017831701 segundos (17.831701 ms)
+    Coeficiente de variação:  16.80%
+    IC95% da média:           [0.097784782, 0.114475768] segundos
+    Mediana:                  0.099998072 segundos
+    Primeiro quartil (Q1):    0.098026455 segundos
+    Terceiro quartil (Q3):    0.103974733 segundos
+    Intervalo interquartil:   0.005948277 segundos
+    Mínimo:                   0.096179045 segundos
+    Máximo:                   0.170991982 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.106043372 segundos (106.043372 ms)
+    Desvio-padrão amostral:   0.017641298 segundos (17.641298 ms)
+    Coeficiente de variação:  16.64%
+    IC95% da média:           [0.097786991, 0.114299753] segundos
+    Mediana:                  0.099975970 segundos
+    Primeiro quartil (Q1):    0.097990467 segundos
+    Terceiro quartil (Q3):    0.103969257 segundos
+    Intervalo interquartil:   0.005978790 segundos
+    Mínimo:                   0.096165790 segundos
+    Máximo:                   0.169951210 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    1.061302750 segundos
+    Desvio-padrão amostral:   0.178317007 segundos
+    Mediana:                  0.999980716 segundos
+    Mínimo:                   0.961790446 segundos
+    Máximo:                   1.709919825 segundos
+
+  Razão CPU/tempo real:       0.999181
+
+INVERSA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000406128 segundos (0.406128 ms)
+    Desvio-padrão amostral:   0.000117509 segundos (0.117509 ms)
+    Coeficiente de variação:  28.93%
+    IC95% da média:           [0.000351132, 0.000461124] segundos
+    Mediana:                  0.000361620 segundos
+    Primeiro quartil (Q1):    0.000354947 segundos
+    Terceiro quartil (Q3):    0.000373055 segundos
+    Intervalo interquartil:   0.000018107 segundos
+    Mínimo:                   0.000345815 segundos
+    Máximo:                   0.000791221 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000405959 segundos (0.405959 ms)
+    Desvio-padrão amostral:   0.000117458 segundos (0.117458 ms)
+    Coeficiente de variação:  28.93%
+    IC95% da média:           [0.000350987, 0.000460931] segundos
+    Mediana:                  0.000361405 segundos
+    Primeiro quartil (Q1):    0.000354822 segundos
+    Terceiro quartil (Q3):    0.000372925 segundos
+    Intervalo interquartil:   0.000018103 segundos
+    Mínimo:                   0.000345640 segundos
+    Máximo:                   0.000790960 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.004061280 segundos
+    Desvio-padrão amostral:   0.001175090 segundos
+    Mediana:                  0.003616198 segundos
+    Mínimo:                   0.003458147 segundos
+    Máximo:                   0.007912207 segundos
+
+  Razão CPU/tempo real:       0.999584
+
+INVERSA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.006090120 segundos (6.090120 ms)
+    Desvio-padrão amostral:   0.000283867 segundos (0.283867 ms)
+    Coeficiente de variação:  4.66%
+    IC95% da média:           [0.005957266, 0.006222975] segundos
+    Mediana:                  0.006083909 segundos
+    Primeiro quartil (Q1):    0.005899719 segundos
+    Terceiro quartil (Q3):    0.006234636 segundos
+    Intervalo interquartil:   0.000334917 segundos
+    Mínimo:                   0.005645328 segundos
+    Máximo:                   0.006767043 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.006089264 segundos (6.089264 ms)
+    Desvio-padrão amostral:   0.000283903 segundos (0.283903 ms)
+    Coeficiente de variação:  4.66%
+    IC95% da média:           [0.005956393, 0.006222135] segundos
+    Mediana:                  0.006082585 segundos
+    Primeiro quartil (Q1):    0.005899360 segundos
+    Terceiro quartil (Q3):    0.006234303 segundos
+    Intervalo interquartil:   0.000334943 segundos
+    Mínimo:                   0.005644970 segundos
+    Máximo:                   0.006766340 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.060901205 segundos
+    Desvio-padrão amostral:   0.002838676 segundos
+    Mediana:                  0.060839089 segundos
+    Mínimo:                   0.056453278 segundos
+    Máximo:                   0.067670433 segundos
+
+  Razão CPU/tempo real:       0.999859
+
+INVERSA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.101971177 segundos (101.971177 ms)
+    Desvio-padrão amostral:   0.006252180 segundos (6.252180 ms)
+    Coeficiente de variação:  6.13%
+    IC95% da média:           [0.099045067, 0.104897287] segundos
+    Mediana:                  0.100138389 segundos
+    Primeiro quartil (Q1):    0.099150452 segundos
+    Terceiro quartil (Q3):    0.102536723 segundos
+    Intervalo interquartil:   0.003386270 segundos
+    Mínimo:                   0.094470805 segundos
+    Máximo:                   0.121978602 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.101928800 segundos (101.928800 ms)
+    Desvio-padrão amostral:   0.006249237 segundos (6.249237 ms)
+    Coeficiente de variação:  6.13%
+    IC95% da média:           [0.099004067, 0.104853534] segundos
+    Mediana:                  0.100120100 segundos
+    Primeiro quartil (Q1):    0.099120470 segundos
+    Terceiro quartil (Q3):    0.102462735 segundos
+    Intervalo interquartil:   0.003342265 segundos
+    Mínimo:                   0.094449690 segundos
+    Máximo:                   0.121964730 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    1.019711770 segundos
+    Desvio-padrão amostral:   0.062521801 segundos
+    Mediana:                  1.001383891 segundos
+    Mínimo:                   0.944708049 segundos
+    Máximo:                   1.219786019 segundos
+
+  Razão CPU/tempo real:       0.999584
+
+MELHOR QUICK - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000015335 segundos (0.015335 ms)
+    Desvio-padrão amostral:   0.000014185 segundos (0.014185 ms)
+    Coeficiente de variação:  92.50%
+    IC95% da média:           [0.000008697, 0.000021974] segundos
+    Mediana:                  0.000007095 segundos
+    Primeiro quartil (Q1):    0.000007035 segundos
+    Terceiro quartil (Q3):    0.000015265 segundos
+    Intervalo interquartil:   0.000008230 segundos
+    Mínimo:                   0.000006840 segundos
+    Máximo:                   0.000052331 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000015259 segundos (0.015259 ms)
+    Desvio-padrão amostral:   0.000014140 segundos (0.014140 ms)
+    Coeficiente de variação:  92.67%
+    IC95% da média:           [0.000008642, 0.000021877] segundos
+    Mediana:                  0.000007065 segundos
+    Primeiro quartil (Q1):    0.000006995 segundos
+    Terceiro quartil (Q3):    0.000015015 segundos
+    Intervalo interquartil:   0.000008020 segundos
+    Mínimo:                   0.000006810 segundos
+    Máximo:                   0.000052230 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000153352 segundos
+    Desvio-padrão amostral:   0.000141846 segundos
+    Mediana:                  0.000070951 segundos
+    Mínimo:                   0.000068401 segundos
+    Máximo:                   0.000523307 segundos
+
+  Razão CPU/tempo real:       0.995044
+
+MELHOR QUICK - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000035147 segundos (0.035147 ms)
+    Desvio-padrão amostral:   0.000002816 segundos (0.002816 ms)
+    Coeficiente de variação:  8.01%
+    IC95% da média:           [0.000033830, 0.000036465] segundos
+    Mediana:                  0.000035081 segundos
+    Primeiro quartil (Q1):    0.000032213 segundos
+    Terceiro quartil (Q3):    0.000037115 segundos
+    Intervalo interquartil:   0.000004902 segundos
+    Mínimo:                   0.000032160 segundos
+    Máximo:                   0.000040621 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000035061 segundos (0.035061 ms)
+    Desvio-padrão amostral:   0.000002787 segundos (0.002787 ms)
+    Coeficiente de variação:  7.95%
+    IC95% da média:           [0.000033757, 0.000036365] segundos
+    Mediana:                  0.000035010 segundos
+    Primeiro quartil (Q1):    0.000032175 segundos
+    Terceiro quartil (Q3):    0.000037028 segundos
+    Intervalo interquartil:   0.000004853 segundos
+    Mínimo:                   0.000032110 segundos
+    Máximo:                   0.000040450 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000351475 segundos
+    Desvio-padrão amostral:   0.000028154 segundos
+    Mediana:                  0.000350804 segundos
+    Mínimo:                   0.000321604 segundos
+    Máximo:                   0.000406206 segundos
+
+  Razão CPU/tempo real:       0.997553
+
+MELHOR QUICK - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000183675 segundos (0.183675 ms)
+    Desvio-padrão amostral:   0.000050603 segundos (0.050603 ms)
+    Coeficiente de variação:  27.55%
+    IC95% da média:           [0.000159992, 0.000207358] segundos
+    Mediana:                  0.000171172 segundos
+    Primeiro quartil (Q1):    0.000161002 segundos
+    Terceiro quartil (Q3):    0.000179888 segundos
+    Intervalo interquartil:   0.000018886 segundos
+    Mínimo:                   0.000157252 segundos
+    Máximo:                   0.000385705 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000183409 segundos (0.183409 ms)
+    Desvio-padrão amostral:   0.000050591 segundos (0.050591 ms)
+    Coeficiente de variação:  27.58%
+    IC95% da média:           [0.000159731, 0.000207087] segundos
+    Mediana:                  0.000170970 segundos
+    Primeiro quartil (Q1):    0.000160905 segundos
+    Terceiro quartil (Q3):    0.000179623 segundos
+    Intervalo interquartil:   0.000018717 segundos
+    Mínimo:                   0.000157040 segundos
+    Máximo:                   0.000385400 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.001836755 segundos
+    Desvio-padrão amostral:   0.000506030 segundos
+    Mediana:                  0.001711724 segundos
+    Mínimo:                   0.001572522 segundos
+    Máximo:                   0.003857053 segundos
+
+  Razão CPU/tempo real:       0.998552
+
+PIOR MERGE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000013315 segundos (0.013315 ms)
+    Desvio-padrão amostral:   0.000004331 segundos (0.004331 ms)
+    Coeficiente de variação:  32.53%
+    IC95% da média:           [0.000011287, 0.000015342] segundos
+    Mediana:                  0.000011945 segundos
+    Primeiro quartil (Q1):    0.000010775 segundos
+    Terceiro quartil (Q3):    0.000013188 segundos
+    Intervalo interquartil:   0.000002412 segundos
+    Mínimo:                   0.000010260 segundos
+    Máximo:                   0.000025690 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000013259 segundos (0.013259 ms)
+    Desvio-padrão amostral:   0.000004286 segundos (0.004286 ms)
+    Coeficiente de variação:  32.33%
+    IC95% da média:           [0.000011253, 0.000015265] segundos
+    Mediana:                  0.000011910 segundos
+    Primeiro quartil (Q1):    0.000010732 segundos
+    Terceiro quartil (Q3):    0.000013140 segundos
+    Intervalo interquartil:   0.000002408 segundos
+    Mínimo:                   0.000010220 segundos
+    Máximo:                   0.000025420 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000133147 segundos
+    Desvio-padrão amostral:   0.000043312 segundos
+    Mediana:                  0.000119452 segundos
+    Mínimo:                   0.000102601 segundos
+    Máximo:                   0.000256904 segundos
+
+  Razão CPU/tempo real:       0.995794
+
+PIOR MERGE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000193842 segundos (0.193842 ms)
+    Desvio-padrão amostral:   0.000020362 segundos (0.020362 ms)
+    Coeficiente de variação:  10.50%
+    IC95% da média:           [0.000184312, 0.000203371] segundos
+    Mediana:                  0.000186023 segundos
+    Primeiro quartil (Q1):    0.000180808 segundos
+    Terceiro quartil (Q3):    0.000198143 segundos
+    Intervalo interquartil:   0.000017335 segundos
+    Mínimo:                   0.000166142 segundos
+    Máximo:                   0.000237153 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000192866 segundos (0.192866 ms)
+    Desvio-padrão amostral:   0.000018883 segundos (0.018883 ms)
+    Coeficiente de variação:  9.79%
+    IC95% da média:           [0.000184029, 0.000201704] segundos
+    Mediana:                  0.000185820 segundos
+    Primeiro quartil (Q1):    0.000180478 segundos
+    Terceiro quartil (Q3):    0.000197982 segundos
+    Intervalo interquartil:   0.000017505 segundos
+    Mínimo:                   0.000166060 segundos
+    Máximo:                   0.000235190 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.001938418 segundos
+    Desvio-padrão amostral:   0.000203620 segundos
+    Mediana:                  0.001860227 segundos
+    Mínimo:                   0.001661424 segundos
+    Máximo:                   0.002371534 segundos
+
+  Razão CPU/tempo real:       0.994965
+
+PIOR MERGE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001081056 segundos (1.081056 ms)
+    Desvio-padrão amostral:   0.000208714 segundos (0.208714 ms)
+    Coeficiente de variação:  19.31%
+    IC95% da média:           [0.000983375, 0.001178737] segundos
+    Mediana:                  0.001011034 segundos
+    Primeiro quartil (Q1):    0.000964638 segundos
+    Terceiro quartil (Q3):    0.001080195 segundos
+    Intervalo interquartil:   0.000115557 segundos
+    Mínimo:                   0.000938743 segundos
+    Máximo:                   0.001815785 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001080487 segundos (1.080487 ms)
+    Desvio-padrão amostral:   0.000208654 segundos (0.208654 ms)
+    Coeficiente de variação:  19.31%
+    IC95% da média:           [0.000982835, 0.001178140] segundos
+    Mediana:                  0.001009815 segundos
+    Primeiro quartil (Q1):    0.000964370 segundos
+    Terceiro quartil (Q3):    0.001079708 segundos
+    Intervalo interquartil:   0.000115338 segundos
+    Mínimo:                   0.000938370 segundos
+    Máximo:                   0.001815190 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.010810564 segundos
+    Desvio-padrão amostral:   0.002087142 segundos
+    Mediana:                  0.010110339 segundos
+    Mínimo:                   0.009387429 segundos
+    Máximo:                   0.018157850 segundos
+
+  Razão CPU/tempo real:       0.999474
+
+ALGORITMO: MERGE SORT
+--------------------------------------------------------------------------------
+
+ALEATÓRIA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000061416 segundos (0.061416 ms)
+    Desvio-padrão amostral:   0.000003692 segundos (0.003692 ms)
+    Coeficiente de variação:  6.01%
+    IC95% da média:           [0.000059689, 0.000063144] segundos
+    Mediana:                  0.000060396 segundos
+    Primeiro quartil (Q1):    0.000058394 segundos
+    Terceiro quartil (Q3):    0.000064489 segundos
+    Intervalo interquartil:   0.000006095 segundos
+    Mínimo:                   0.000057071 segundos
+    Máximo:                   0.000068391 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000061190 segundos (0.061190 ms)
+    Desvio-padrão amostral:   0.000003549 segundos (0.003549 ms)
+    Coeficiente de variação:  5.80%
+    IC95% da média:           [0.000059529, 0.000062851] segundos
+    Mediana:                  0.000060245 segundos
+    Primeiro quartil (Q1):    0.000058308 segundos
+    Terceiro quartil (Q3):    0.000064265 segundos
+    Intervalo interquartil:   0.000005957 segundos
+    Mínimo:                   0.000057020 segundos
+    Máximo:                   0.000068300 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000614163 segundos
+    Desvio-padrão amostral:   0.000036916 segundos
+    Mediana:                  0.000603958 segundos
+    Mínimo:                   0.000570707 segundos
+    Máximo:                   0.000683909 segundos
+
+  Razão CPU/tempo real:       0.996320
+
+ALEATÓRIA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000356577 segundos (0.356577 ms)
+    Desvio-padrão amostral:   0.000141062 segundos (0.141062 ms)
+    Coeficiente de variação:  39.56%
+    IC95% da média:           [0.000290558, 0.000422596] segundos
+    Mediana:                  0.000308509 segundos
+    Primeiro quartil (Q1):    0.000299786 segundos
+    Terceiro quartil (Q3):    0.000339620 segundos
+    Intervalo interquartil:   0.000039834 segundos
+    Mínimo:                   0.000292604 segundos
+    Máximo:                   0.000928293 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000356334 segundos (0.356334 ms)
+    Desvio-padrão amostral:   0.000141013 segundos (0.141013 ms)
+    Coeficiente de variação:  39.57%
+    IC95% da média:           [0.000290339, 0.000422330] segundos
+    Mediana:                  0.000308375 segundos
+    Primeiro quartil (Q1):    0.000299638 segundos
+    Terceiro quartil (Q3):    0.000339363 segundos
+    Intervalo interquartil:   0.000039725 segundos
+    Mínimo:                   0.000292080 segundos
+    Máximo:                   0.000927850 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.003565770 segundos
+    Desvio-padrão amostral:   0.001410617 segundos
+    Mediana:                  0.003085093 segundos
+    Mínimo:                   0.002926041 segundos
+    Máximo:                   0.009282929 segundos
+
+  Razão CPU/tempo real:       0.999319
+
+ALEATÓRIA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001488172 segundos (1.488172 ms)
+    Desvio-padrão amostral:   0.000111569 segundos (0.111569 ms)
+    Coeficiente de variação:  7.50%
+    IC95% da média:           [0.001435956, 0.001540388] segundos
+    Mediana:                  0.001451284 segundos
+    Primeiro quartil (Q1):    0.001420237 segundos
+    Terceiro quartil (Q3):    0.001507103 segundos
+    Intervalo interquartil:   0.000086866 segundos
+    Mínimo:                   0.001393659 segundos
+    Máximo:                   0.001834534 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001487780 segundos (1.487780 ms)
+    Desvio-padrão amostral:   0.000111525 segundos (0.111525 ms)
+    Coeficiente de variação:  7.50%
+    IC95% da média:           [0.001435585, 0.001539975] segundos
+    Mediana:                  0.001450990 segundos
+    Primeiro quartil (Q1):    0.001419748 segundos
+    Terceiro quartil (Q3):    0.001506778 segundos
+    Intervalo interquartil:   0.000087030 segundos
+    Mínimo:                   0.001393450 segundos
+    Máximo:                   0.001834030 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.014881720 segundos
+    Desvio-padrão amostral:   0.001115686 segundos
+    Mediana:                  0.014512845 segundos
+    Mínimo:                   0.013936592 segundos
+    Máximo:                   0.018345340 segundos
+
+  Razão CPU/tempo real:       0.999737
+
+CRESCENTE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000017595 segundos (0.017595 ms)
+    Desvio-padrão amostral:   0.000003207 segundos (0.003207 ms)
+    Coeficiente de variação:  18.23%
+    IC95% da média:           [0.000016094, 0.000019096] segundos
+    Mediana:                  0.000016425 segundos
+    Primeiro quartil (Q1):    0.000015920 segundos
+    Terceiro quartil (Q3):    0.000018010 segundos
+    Intervalo interquartil:   0.000002090 segundos
+    Mínimo:                   0.000015490 segundos
+    Máximo:                   0.000029020 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000017523 segundos (0.017523 ms)
+    Desvio-padrão amostral:   0.000003187 segundos (0.003187 ms)
+    Coeficiente de variação:  18.19%
+    IC95% da média:           [0.000016031, 0.000019014] segundos
+    Mediana:                  0.000016360 segundos
+    Primeiro quartil (Q1):    0.000015740 segundos
+    Terceiro quartil (Q3):    0.000017955 segundos
+    Intervalo interquartil:   0.000002215 segundos
+    Mínimo:                   0.000015430 segundos
+    Máximo:                   0.000028870 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000175952 segundos
+    Desvio-padrão amostral:   0.000032072 segundos
+    Mediana:                  0.000164252 segundos
+    Mínimo:                   0.000154902 segundos
+    Máximo:                   0.000290204 segundos
+
+  Razão CPU/tempo real:       0.995908
+
+CRESCENTE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000098365 segundos (0.098365 ms)
+    Desvio-padrão amostral:   0.000040698 segundos (0.040698 ms)
+    Coeficiente de variação:  41.37%
+    IC95% da média:           [0.000079318, 0.000117412] segundos
+    Mediana:                  0.000082991 segundos
+    Primeiro quartil (Q1):    0.000074854 segundos
+    Terceiro quartil (Q3):    0.000092723 segundos
+    Intervalo interquartil:   0.000017870 segundos
+    Mínimo:                   0.000069221 segundos
+    Máximo:                   0.000220703 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000097790 segundos (0.097790 ms)
+    Desvio-padrão amostral:   0.000040062 segundos (0.040062 ms)
+    Coeficiente de variação:  40.97%
+    IC95% da média:           [0.000079040, 0.000116540] segundos
+    Mediana:                  0.000082860 segundos
+    Primeiro quartil (Q1):    0.000074655 segundos
+    Terceiro quartil (Q3):    0.000092557 segundos
+    Intervalo interquartil:   0.000017903 segundos
+    Mínimo:                   0.000069180 segundos
+    Máximo:                   0.000220450 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000983648 segundos
+    Desvio-padrão amostral:   0.000406979 segundos
+    Mediana:                  0.000829911 segundos
+    Mínimo:                   0.000692209 segundos
+    Máximo:                   0.002207030 segundos
+
+  Razão CPU/tempo real:       0.994154
+
+CRESCENTE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000347739 segundos (0.347739 ms)
+    Desvio-padrão amostral:   0.000030064 segundos (0.030064 ms)
+    Coeficiente de variação:  8.65%
+    IC95% da média:           [0.000333669, 0.000361810] segundos
+    Mediana:                  0.000340815 segundos
+    Primeiro quartil (Q1):    0.000328593 segundos
+    Terceiro quartil (Q3):    0.000351350 segundos
+    Intervalo interquartil:   0.000022758 segundos
+    Mínimo:                   0.000316864 segundos
+    Máximo:                   0.000428476 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000347453 segundos (0.347453 ms)
+    Desvio-padrão amostral:   0.000030056 segundos (0.030056 ms)
+    Coeficiente de variação:  8.65%
+    IC95% da média:           [0.000333386, 0.000361519] segundos
+    Mediana:                  0.000340585 segundos
+    Primeiro quartil (Q1):    0.000328352 segundos
+    Terceiro quartil (Q3):    0.000350983 segundos
+    Intervalo interquartil:   0.000022630 segundos
+    Mínimo:                   0.000316770 segundos
+    Máximo:                   0.000428270 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.003477393 segundos
+    Desvio-padrão amostral:   0.000300641 segundos
+    Mediana:                  0.003408147 segundos
+    Mínimo:                   0.003168643 segundos
+    Máximo:                   0.004284759 segundos
+
+  Razão CPU/tempo real:       0.999178
+
+INVERSA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000017545 segundos (0.017545 ms)
+    Desvio-padrão amostral:   0.000004467 segundos (0.004467 ms)
+    Coeficiente de variação:  25.46%
+    IC95% da média:           [0.000015454, 0.000019636] segundos
+    Mediana:                  0.000015010 segundos
+    Primeiro quartil (Q1):    0.000014278 segundos
+    Terceiro quartil (Q3):    0.000019762 segundos
+    Intervalo interquartil:   0.000005485 segundos
+    Mínimo:                   0.000014220 segundos
+    Máximo:                   0.000026930 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000017477 segundos (0.017477 ms)
+    Desvio-padrão amostral:   0.000004424 segundos (0.004424 ms)
+    Coeficiente de variação:  25.31%
+    IC95% da média:           [0.000015406, 0.000019547] segundos
+    Mediana:                  0.000014975 segundos
+    Primeiro quartil (Q1):    0.000014235 segundos
+    Terceiro quartil (Q3):    0.000019683 segundos
+    Intervalo interquartil:   0.000005448 segundos
+    Mínimo:                   0.000014200 segundos
+    Máximo:                   0.000026840 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000175453 segundos
+    Desvio-padrão amostral:   0.000044672 segundos
+    Mediana:                  0.000150102 segundos
+    Mínimo:                   0.000142202 segundos
+    Máximo:                   0.000269304 segundos
+
+  Razão CPU/tempo real:       0.996124
+
+INVERSA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000118213 segundos (0.118213 ms)
+    Desvio-padrão amostral:   0.000098349 segundos (0.098349 ms)
+    Coeficiente de variação:  83.20%
+    IC95% da média:           [0.000072184, 0.000164241] segundos
+    Mediana:                  0.000076061 segundos
+    Primeiro quartil (Q1):    0.000066324 segundos
+    Terceiro quartil (Q3):    0.000099786 segundos
+    Intervalo interquartil:   0.000033463 segundos
+    Mínimo:                   0.000063651 segundos
+    Máximo:                   0.000415066 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000117440 segundos (0.117440 ms)
+    Desvio-padrão amostral:   0.000096446 segundos (0.096446 ms)
+    Coeficiente de variação:  82.12%
+    IC95% da média:           [0.000072302, 0.000162578] segundos
+    Mediana:                  0.000075900 segundos
+    Primeiro quartil (Q1):    0.000066238 segundos
+    Terceiro quartil (Q3):    0.000099542 segundos
+    Intervalo interquartil:   0.000033305 segundos
+    Mínimo:                   0.000063570 segundos
+    Máximo:                   0.000403140 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.001182126 segundos
+    Desvio-padrão amostral:   0.000983491 segundos
+    Mediana:                  0.000760611 segundos
+    Mínimo:                   0.000636508 segundos
+    Máximo:                   0.004150657 segundos
+
+  Razão CPU/tempo real:       0.993461
+
+INVERSA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000362045 segundos (0.362045 ms)
+    Desvio-padrão amostral:   0.000084533 segundos (0.084533 ms)
+    Coeficiente de variação:  23.35%
+    IC95% da média:           [0.000322482, 0.000401607] segundos
+    Mediana:                  0.000329990 segundos
+    Primeiro quartil (Q1):    0.000310559 segundos
+    Terceiro quartil (Q3):    0.000367798 segundos
+    Intervalo interquartil:   0.000057239 segundos
+    Mínimo:                   0.000297664 segundos
+    Máximo:                   0.000621989 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000361701 segundos (0.361701 ms)
+    Desvio-padrão amostral:   0.000084550 segundos (0.084550 ms)
+    Coeficiente de variação:  23.38%
+    IC95% da média:           [0.000322130, 0.000401272] segundos
+    Mediana:                  0.000329640 segundos
+    Primeiro quartil (Q1):    0.000310208 segundos
+    Terceiro quartil (Q3):    0.000367530 segundos
+    Intervalo interquartil:   0.000057323 segundos
+    Mínimo:                   0.000297170 segundos
+    Máximo:                   0.000621670 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.003620445 segundos
+    Desvio-padrão amostral:   0.000845332 segundos
+    Mediana:                  0.003299896 segundos
+    Mínimo:                   0.002976641 segundos
+    Máximo:                   0.006219887 segundos
+
+  Razão CPU/tempo real:       0.999050
+
+MELHOR QUICK - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000056228 segundos (0.056228 ms)
+    Desvio-padrão amostral:   0.000171998 segundos (0.171998 ms)
+    Coeficiente de variação:  305.89%
+    IC95% da média:           [0.000000000, 0.000136725] segundos
+    Mediana:                  0.000016550 segundos
+    Primeiro quartil (Q1):    0.000016432 segundos
+    Terceiro quartil (Q3):    0.000017045 segundos
+    Intervalo interquartil:   0.000000612 segundos
+    Mínimo:                   0.000016360 segundos
+    Máximo:                   0.000786821 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000056161 segundos (0.056161 ms)
+    Desvio-padrão amostral:   0.000171971 segundos (0.171971 ms)
+    Coeficiente de variação:  306.21%
+    IC95% da média:           [0.000000000, 0.000136646] segundos
+    Mediana:                  0.000016505 segundos
+    Primeiro quartil (Q1):    0.000016385 segundos
+    Terceiro quartil (Q3):    0.000016885 segundos
+    Intervalo interquartil:   0.000000500 segundos
+    Mínimo:                   0.000016320 segundos
+    Máximo:                   0.000786640 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000562278 segundos
+    Desvio-padrão amostral:   0.001719982 segundos
+    Mediana:                  0.000165502 segundos
+    Mínimo:                   0.000163602 segundos
+    Máximo:                   0.007868209 segundos
+
+  Razão CPU/tempo real:       0.998808
+
+MELHOR QUICK - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000080190 segundos (0.080190 ms)
+    Desvio-padrão amostral:   0.000006473 segundos (0.006473 ms)
+    Coeficiente de variação:  8.07%
+    IC95% da média:           [0.000077161, 0.000083220] segundos
+    Mediana:                  0.000079821 segundos
+    Primeiro quartil (Q1):    0.000074909 segundos
+    Terceiro quartil (Q3):    0.000083363 segundos
+    Intervalo interquartil:   0.000008455 segundos
+    Mínimo:                   0.000072921 segundos
+    Máximo:                   0.000092211 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000080052 segundos (0.080052 ms)
+    Desvio-padrão amostral:   0.000006437 segundos (0.006437 ms)
+    Coeficiente de variação:  8.04%
+    IC95% da média:           [0.000077040, 0.000083065] segundos
+    Mediana:                  0.000079615 segundos
+    Primeiro quartil (Q1):    0.000074830 segundos
+    Terceiro quartil (Q3):    0.000083200 segundos
+    Intervalo interquartil:   0.000008370 segundos
+    Mínimo:                   0.000072870 segundos
+    Máximo:                   0.000092070 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000801906 segundos
+    Desvio-padrão amostral:   0.000064736 segundos
+    Mediana:                  0.000798211 segundos
+    Mínimo:                   0.000729210 segundos
+    Máximo:                   0.000922113 segundos
+
+  Razão CPU/tempo real:       0.998279
+
+MELHOR QUICK - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000469184 segundos (0.469184 ms)
+    Desvio-padrão amostral:   0.000234400 segundos (0.234400 ms)
+    Coeficiente de variação:  49.96%
+    IC95% da média:           [0.000359482, 0.000578887] segundos
+    Mediana:                  0.000362225 segundos
+    Primeiro quartil (Q1):    0.000346803 segundos
+    Terceiro quartil (Q3):    0.000463258 segundos
+    Intervalo interquartil:   0.000116456 segundos
+    Mínimo:                   0.000338045 segundos
+    Máximo:                   0.001157746 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000468897 segundos (0.468897 ms)
+    Desvio-padrão amostral:   0.000234342 segundos (0.234342 ms)
+    Coeficiente de variação:  49.98%
+    IC95% da média:           [0.000359222, 0.000578572] segundos
+    Mediana:                  0.000361920 segundos
+    Primeiro quartil (Q1):    0.000346602 segundos
+    Terceiro quartil (Q3):    0.000462848 segundos
+    Intervalo interquartil:   0.000116245 segundos
+    Mínimo:                   0.000337730 segundos
+    Máximo:                   0.001157220 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.004691844 segundos
+    Desvio-padrão amostral:   0.002344002 segundos
+    Mediana:                  0.003622249 segundos
+    Mínimo:                   0.003380446 segundos
+    Máximo:                   0.011577458 segundos
+
+  Razão CPU/tempo real:       0.999388
+
+PIOR MERGE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000018287 segundos (0.018287 ms)
+    Desvio-padrão amostral:   0.000002900 segundos (0.002900 ms)
+    Coeficiente de variação:  15.86%
+    IC95% da média:           [0.000016930, 0.000019644] segundos
+    Mediana:                  0.000017090 segundos
+    Primeiro quartil (Q1):    0.000016572 segundos
+    Terceiro quartil (Q3):    0.000017553 segundos
+    Intervalo interquartil:   0.000000980 segundos
+    Mínimo:                   0.000016440 segundos
+    Máximo:                   0.000025960 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000018231 segundos (0.018231 ms)
+    Desvio-padrão amostral:   0.000002867 segundos (0.002867 ms)
+    Coeficiente de variação:  15.73%
+    IC95% da média:           [0.000016889, 0.000019572] segundos
+    Mediana:                  0.000017065 segundos
+    Primeiro quartil (Q1):    0.000016538 segundos
+    Terceiro quartil (Q3):    0.000017523 segundos
+    Intervalo interquartil:   0.000000985 segundos
+    Mínimo:                   0.000016400 segundos
+    Máximo:                   0.000025850 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000182873 segundos
+    Desvio-padrão amostral:   0.000029005 segundos
+    Mediana:                  0.000170902 segundos
+    Mínimo:                   0.000164403 segundos
+    Máximo:                   0.000259603 segundos
+
+  Razão CPU/tempo real:       0.996938
+
+PIOR MERGE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000085716 segundos (0.085716 ms)
+    Desvio-padrão amostral:   0.000009189 segundos (0.009189 ms)
+    Coeficiente de variação:  10.72%
+    IC95% da média:           [0.000081416, 0.000090017] segundos
+    Mediana:                  0.000084301 segundos
+    Primeiro quartil (Q1):    0.000077201 segundos
+    Terceiro quartil (Q3):    0.000090319 segundos
+    Intervalo interquartil:   0.000013118 segundos
+    Mínimo:                   0.000074811 segundos
+    Máximo:                   0.000105891 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000085442 segundos (0.085442 ms)
+    Desvio-padrão amostral:   0.000008977 segundos (0.008977 ms)
+    Coeficiente de variação:  10.51%
+    IC95% da média:           [0.000081240, 0.000089644] segundos
+    Mediana:                  0.000084110 segundos
+    Primeiro quartil (Q1):    0.000077095 segundos
+    Terceiro quartil (Q3):    0.000090063 segundos
+    Intervalo interquartil:   0.000012967 segundos
+    Mínimo:                   0.000074750 segundos
+    Máximo:                   0.000105700 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.000857167 segundos
+    Desvio-padrão amostral:   0.000091890 segundos
+    Mediana:                  0.000843012 segundos
+    Mínimo:                   0.000748110 segundos
+    Máximo:                   0.001058915 segundos
+
+  Razão CPU/tempo real:       0.996803
+
+PIOR MERGE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000397480 segundos (0.397480 ms)
+    Desvio-padrão amostral:   0.000028651 segundos (0.028651 ms)
+    Coeficiente de variação:  7.21%
+    IC95% da média:           [0.000384071, 0.000410889] segundos
+    Mediana:                  0.000388490 segundos
+    Primeiro quartil (Q1):    0.000374668 segundos
+    Terceiro quartil (Q3):    0.000418489 segundos
+    Intervalo interquartil:   0.000043821 segundos
+    Mínimo:                   0.000360865 segundos
+    Máximo:                   0.000455976 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000397142 segundos (0.397142 ms)
+    Desvio-padrão amostral:   0.000028628 segundos (0.028628 ms)
+    Coeficiente de variação:  7.21%
+    IC95% da média:           [0.000383744, 0.000410540] segundos
+    Mediana:                  0.000388010 segundos
+    Primeiro quartil (Q1):    0.000374380 segundos
+    Terceiro quartil (Q3):    0.000418237 segundos
+    Intervalo interquartil:   0.000043857 segundos
+    Mínimo:                   0.000360510 segundos
+    Máximo:                   0.000455490 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.003974799 segundos
+    Desvio-padrão amostral:   0.000286509 segundos
+    Mediana:                  0.003884904 segundos
+    Mínimo:                   0.003608649 segundos
+    Máximo:                   0.004559762 segundos
+
+  Razão CPU/tempo real:       0.999150
+
+================================================================================
+LINGUAGEM: PYTHON
+================================================================================
+
+ALGORITMO: QUICK SORT
+--------------------------------------------------------------------------------
+
+ALEATÓRIA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000822521 segundos (0.822521 ms)
+    Desvio-padrão amostral:   0.000202784 segundos (0.202784 ms)
+    Coeficiente de variação:  24.65%
+    IC95% da média:           [0.000727615, 0.000917427] segundos
+    Mediana:                  0.000733905 segundos
+    Primeiro quartil (Q1):    0.000719260 segundos
+    Terceiro quartil (Q3):    0.000801854 segundos
+    Intervalo interquartil:   0.000082594 segundos
+    Mínimo:                   0.000702280 segundos
+    Máximo:                   0.001518791 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000821607 segundos (0.821607 ms)
+    Desvio-padrão amostral:   0.000202884 segundos (0.202884 ms)
+    Coeficiente de variação:  24.69%
+    IC95% da média:           [0.000726655, 0.000916560] segundos
+    Mediana:                  0.000733500 segundos
+    Primeiro quartil (Q1):    0.000718617 segundos
+    Terceiro quartil (Q3):    0.000801377 segundos
+    Intervalo interquartil:   0.000082760 segundos
+    Mínimo:                   0.000701730 segundos
+    Máximo:                   0.001518110 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.008225208 segundos
+    Desvio-padrão amostral:   0.002027838 segundos
+    Mediana:                  0.007339051 segundos
+    Mínimo:                   0.007022797 segundos
+    Máximo:                   0.015187908 segundos
+
+  Razão CPU/tempo real:       0.998889
+
+ALEATÓRIA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.004346375 segundos (4.346375 ms)
+    Desvio-padrão amostral:   0.001650046 segundos (1.650046 ms)
+    Coeficiente de variação:  37.96%
+    IC95% da média:           [0.003574130, 0.005118621] segundos
+    Mediana:                  0.003546434 segundos
+    Primeiro quartil (Q1):    0.003477145 segundos
+    Terceiro quartil (Q3):    0.004326855 segundos
+    Intervalo interquartil:   0.000849709 segundos
+    Mínimo:                   0.003420377 segundos
+    Máximo:                   0.009728264 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.004345233 segundos (4.345233 ms)
+    Desvio-padrão amostral:   0.001649658 segundos (1.649658 ms)
+    Coeficiente de variação:  37.96%
+    IC95% da média:           [0.003573169, 0.005117297] segundos
+    Mediana:                  0.003545650 segundos
+    Primeiro quartil (Q1):    0.003474883 segundos
+    Terceiro quartil (Q3):    0.004326023 segundos
+    Intervalo interquartil:   0.000851140 segundos
+    Mínimo:                   0.003419770 segundos
+    Máximo:                   0.009724610 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.043463754 segundos
+    Desvio-padrão amostral:   0.016500456 segundos
+    Mediana:                  0.035464338 segundos
+    Mínimo:                   0.034203771 segundos
+    Máximo:                   0.097282640 segundos
+
+  Razão CPU/tempo real:       0.999737
+
+ALEATÓRIA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.018457546 segundos (18.457546 ms)
+    Desvio-padrão amostral:   0.000846853 segundos (0.846853 ms)
+    Coeficiente de variação:  4.59%
+    IC95% da média:           [0.018061207, 0.018853886] segundos
+    Mediana:                  0.018230738 segundos
+    Primeiro quartil (Q1):    0.018026261 segundos
+    Terceiro quartil (Q3):    0.018919788 segundos
+    Intervalo interquartil:   0.000893527 segundos
+    Mínimo:                   0.017422603 segundos
+    Máximo:                   0.020949469 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.018451712 segundos (18.451712 ms)
+    Desvio-padrão amostral:   0.000844346 segundos (0.844346 ms)
+    Coeficiente de variação:  4.58%
+    IC95% da média:           [0.018056546, 0.018846878] segundos
+    Mediana:                  0.018229200 segundos
+    Primeiro quartil (Q1):    0.018024085 segundos
+    Terceiro quartil (Q3):    0.018909855 segundos
+    Intervalo interquartil:   0.000885770 segundos
+    Mínimo:                   0.017417970 segundos
+    Máximo:                   0.020945010 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.184575462 segundos
+    Desvio-padrão amostral:   0.008468533 segundos
+    Mediana:                  0.182307377 segundos
+    Mínimo:                   0.174226026 segundos
+    Máximo:                   0.209494690 segundos
+
+  Razão CPU/tempo real:       0.999684
+
+CRESCENTE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.029825353 segundos (29.825353 ms)
+    Desvio-padrão amostral:   0.001297669 segundos (1.297669 ms)
+    Coeficiente de variação:  4.35%
+    IC95% da média:           [0.029218026, 0.030432681] segundos
+    Mediana:                  0.029425424 segundos
+    Primeiro quartil (Q1):    0.029052472 segundos
+    Terceiro quartil (Q3):    0.030204502 segundos
+    Intervalo interquartil:   0.001152030 segundos
+    Mínimo:                   0.028332174 segundos
+    Máximo:                   0.033664956 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.029819878 segundos (29.819878 ms)
+    Desvio-padrão amostral:   0.001298359 segundos (1.298359 ms)
+    Coeficiente de variação:  4.35%
+    IC95% da média:           [0.029212227, 0.030427529] segundos
+    Mediana:                  0.029419405 segundos
+    Primeiro quartil (Q1):    0.029044990 segundos
+    Terceiro quartil (Q3):    0.030200787 segundos
+    Intervalo interquartil:   0.001155797 segundos
+    Mínimo:                   0.028329070 segundos
+    Máximo:                   0.033659230 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.298253532 segundos
+    Desvio-padrão amostral:   0.012976685 segundos
+    Mediana:                  0.294254238 segundos
+    Mínimo:                   0.283321740 segundos
+    Máximo:                   0.336649563 segundos
+
+  Razão CPU/tempo real:       0.999816
+
+CRESCENTE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.535315325 segundos (535.315325 ms)
+    Desvio-padrão amostral:   0.031434043 segundos (31.434043 ms)
+    Coeficiente de variação:  5.87%
+    IC95% da média:           [0.520603740, 0.550026909] segundos
+    Mediana:                  0.528274062 segundos
+    Primeiro quartil (Q1):    0.514953075 segundos
+    Terceiro quartil (Q3):    0.544361169 segundos
+    Intervalo interquartil:   0.029408094 segundos
+    Mínimo:                   0.494507527 segundos
+    Máximo:                   0.608736769 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.534879432 segundos (534.879432 ms)
+    Desvio-padrão amostral:   0.031016069 segundos (31.016069 ms)
+    Coeficiente de variação:  5.80%
+    IC95% da média:           [0.520363465, 0.549395399] segundos
+    Mediana:                  0.527990995 segundos
+    Primeiro quartil (Q1):    0.514831845 segundos
+    Terceiro quartil (Q3):    0.544000105 segundos
+    Intervalo interquartil:   0.029168260 segundos
+    Mínimo:                   0.494392820 segundos
+    Máximo:                   0.605419030 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    5.353153245 segundos
+    Desvio-padrão amostral:   0.314340429 segundos
+    Mediana:                  5.282740627 segundos
+    Mínimo:                   4.945075268 segundos
+    Máximo:                   6.087367694 segundos
+
+  Razão CPU/tempo real:       0.999186
+
+CRESCENTE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    7.768892774 segundos (7768.892774 ms)
+    Desvio-padrão amostral:   0.071268550 segundos (71.268550 ms)
+    Coeficiente de variação:  0.92%
+    IC95% da média:           [7.735538066, 7.802247482] segundos
+    Mediana:                  7.758521869 segundos
+    Primeiro quartil (Q1):    7.735410630 segundos
+    Terceiro quartil (Q3):    7.810360712 segundos
+    Intervalo interquartil:   0.074950082 segundos
+    Mínimo:                   7.613218398 segundos
+    Máximo:                   7.893886135 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    7.766186565 segundos (7766.186565 ms)
+    Desvio-padrão amostral:   0.071125587 segundos (71.125587 ms)
+    Coeficiente de variação:  0.92%
+    IC95% da média:           [7.732898765, 7.799474364] segundos
+    Mediana:                  7.754830630 segundos
+    Primeiro quartil (Q1):    7.732700160 segundos
+    Terceiro quartil (Q3):    7.808519097 segundos
+    Intervalo interquartil:   0.075818937 segundos
+    Mínimo:                   7.610466440 segundos
+    Máximo:                   7.891502640 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    77.688927738 segundos
+    Desvio-padrão amostral:   0.712685497 segundos
+    Mediana:                  77.585218690 segundos
+    Mínimo:                   76.132183976 segundos
+    Máximo:                   78.938861350 segundos
+
+  Razão CPU/tempo real:       0.999652
+
+INVERSA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.022711854 segundos (22.711854 ms)
+    Desvio-padrão amostral:   0.000813914 segundos (0.813914 ms)
+    Coeficiente de variação:  3.58%
+    IC95% da média:           [0.022330931, 0.023092778] segundos
+    Mediana:                  0.022486768 segundos
+    Primeiro quartil (Q1):    0.022164691 segundos
+    Terceiro quartil (Q3):    0.023104626 segundos
+    Intervalo interquartil:   0.000939935 segundos
+    Mínimo:                   0.021714435 segundos
+    Máximo:                   0.024708643 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.022702273 segundos (22.702273 ms)
+    Desvio-padrão amostral:   0.000814482 segundos (0.814482 ms)
+    Coeficiente de variação:  3.59%
+    IC95% da média:           [0.022321084, 0.023083462] segundos
+    Mediana:                  0.022483640 segundos
+    Primeiro quartil (Q1):    0.022163790 segundos
+    Terceiro quartil (Q3):    0.023102335 segundos
+    Intervalo interquartil:   0.000938545 segundos
+    Mínimo:                   0.021710630 segundos
+    Máximo:                   0.024703810 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.227118544 segundos
+    Desvio-padrão amostral:   0.008139139 segundos
+    Mediana:                  0.224867683 segundos
+    Mínimo:                   0.217144351 segundos
+    Máximo:                   0.247086429 segundos
+
+  Razão CPU/tempo real:       0.999578
+
+INVERSA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.366877351 segundos (366.877351 ms)
+    Desvio-padrão amostral:   0.019114047 segundos (19.114047 ms)
+    Coeficiente de variação:  5.21%
+    IC95% da média:           [0.357931702, 0.375823001] segundos
+    Mediana:                  0.361770027 segundos
+    Primeiro quartil (Q1):    0.360181430 segundos
+    Terceiro quartil (Q3):    0.367250159 segundos
+    Intervalo interquartil:   0.007068729 segundos
+    Mínimo:                   0.355975704 segundos
+    Máximo:                   0.445145185 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.366701263 segundos (366.701263 ms)
+    Desvio-padrão amostral:   0.019164888 segundos (19.164888 ms)
+    Coeficiente de variação:  5.23%
+    IC95% da média:           [0.357731819, 0.375670707] segundos
+    Mediana:                  0.361566740 segundos
+    Primeiro quartil (Q1):    0.360038733 segundos
+    Terceiro quartil (Q3):    0.367197370 segundos
+    Intervalo interquartil:   0.007158638 segundos
+    Mínimo:                   0.354545460 segundos
+    Máximo:                   0.445062570 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    3.668773511 segundos
+    Desvio-padrão amostral:   0.191140472 segundos
+    Mediana:                  3.617700265 segundos
+    Mínimo:                   3.559757039 segundos
+    Máximo:                   4.451451850 segundos
+
+  Razão CPU/tempo real:       0.999520
+
+INVERSA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n^2
+
+  TEMPO REAL POR VETOR:
+    Média:                    5.899041874 segundos (5899.041874 ms)
+    Desvio-padrão amostral:   0.081542820 segundos (81.542820 ms)
+    Coeficiente de variação:  1.38%
+    IC95% da média:           [5.860878660, 5.937205089] segundos
+    Mediana:                  5.877773907 segundos
+    Primeiro quartil (Q1):    5.846576643 segundos
+    Terceiro quartil (Q3):    5.945710935 segundos
+    Intervalo interquartil:   0.099134292 segundos
+    Mínimo:                   5.787600619 segundos
+    Máximo:                   6.088987521 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    5.896750715 segundos (5896.750715 ms)
+    Desvio-padrão amostral:   0.081436443 segundos (81.436443 ms)
+    Coeficiente de variação:  1.38%
+    IC95% da média:           [5.858637287, 5.934864144] segundos
+    Mediana:                  5.875708610 segundos
+    Primeiro quartil (Q1):    5.843235845 segundos
+    Terceiro quartil (Q3):    5.942582970 segundos
+    Intervalo interquartil:   0.099347125 segundos
+    Mínimo:                   5.786146060 segundos
+    Máximo:                   6.086962370 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    58.990418742 segundos
+    Desvio-padrão amostral:   0.815428205 segundos
+    Mediana:                  58.777739079 segundos
+    Mínimo:                   57.876006194 segundos
+    Máximo:                   60.889875213 segundos
+
+  Razão CPU/tempo real:       0.999612
+
+MELHOR QUICK - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000550111 segundos (0.550111 ms)
+    Desvio-padrão amostral:   0.000153924 segundos (0.153924 ms)
+    Coeficiente de variação:  27.98%
+    IC95% da média:           [0.000478073, 0.000622150] segundos
+    Mediana:                  0.000494257 segundos
+    Primeiro quartil (Q1):    0.000468061 segundos
+    Terceiro quartil (Q3):    0.000555848 segundos
+    Intervalo interquartil:   0.000087787 segundos
+    Mínimo:                   0.000453986 segundos
+    Máximo:                   0.001085655 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000549309 segundos (0.549309 ms)
+    Desvio-padrão amostral:   0.000153913 segundos (0.153913 ms)
+    Coeficiente de variação:  28.02%
+    IC95% da média:           [0.000477275, 0.000621342] segundos
+    Mediana:                  0.000493870 segundos
+    Primeiro quartil (Q1):    0.000467348 segundos
+    Terceiro quartil (Q3):    0.000549737 segundos
+    Intervalo interquartil:   0.000082390 segundos
+    Mínimo:                   0.000453760 segundos
+    Máximo:                   0.001085290 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.005501115 segundos
+    Desvio-padrão amostral:   0.001539242 segundos
+    Mediana:                  0.004942567 segundos
+    Mínimo:                   0.004539862 segundos
+    Máximo:                   0.010856547 segundos
+
+  Razão CPU/tempo real:       0.998542
+
+MELHOR QUICK - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.002704947 segundos (2.704947 ms)
+    Desvio-padrão amostral:   0.000359433 segundos (0.359433 ms)
+    Coeficiente de variação:  13.29%
+    IC95% da média:           [0.002536727, 0.002873167] segundos
+    Mediana:                  0.002595442 segundos
+    Primeiro quartil (Q1):    0.002455607 segundos
+    Terceiro quartil (Q3):    0.002931689 segundos
+    Intervalo interquartil:   0.000476082 segundos
+    Mínimo:                   0.002305592 segundos
+    Máximo:                   0.003649571 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.002704098 segundos (2.704098 ms)
+    Desvio-padrão amostral:   0.000359323 segundos (0.359323 ms)
+    Coeficiente de variação:  13.29%
+    IC95% da média:           [0.002535929, 0.002872267] segundos
+    Mediana:                  0.002594675 segundos
+    Primeiro quartil (Q1):    0.002454850 segundos
+    Terceiro quartil (Q3):    0.002931097 segundos
+    Intervalo interquartil:   0.000476247 segundos
+    Mínimo:                   0.002304910 segundos
+    Máximo:                   0.003647840 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.027049468 segundos
+    Desvio-padrão amostral:   0.003594334 segundos
+    Mediana:                  0.025954413 segundos
+    Mínimo:                   0.023055922 segundos
+    Máximo:                   0.036495710 segundos
+
+  Razão CPU/tempo real:       0.999686
+
+MELHOR QUICK - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.012199926 segundos (12.199926 ms)
+    Desvio-padrão amostral:   0.000473270 segundos (0.473270 ms)
+    Coeficiente de variação:  3.88%
+    IC95% da média:           [0.011978429, 0.012421423] segundos
+    Mediana:                  0.012114942 segundos
+    Primeiro quartil (Q1):    0.011868530 segundos
+    Terceiro quartil (Q3):    0.012406918 segundos
+    Intervalo interquartil:   0.000538387 segundos
+    Mínimo:                   0.011603249 segundos
+    Máximo:                   0.013224662 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.012196327 segundos (12.196327 ms)
+    Desvio-padrão amostral:   0.000473641 segundos (0.473641 ms)
+    Coeficiente de variação:  3.88%
+    IC95% da média:           [0.011974657, 0.012417998] segundos
+    Mediana:                  0.012112805 segundos
+    Primeiro quartil (Q1):    0.011855425 segundos
+    Terceiro quartil (Q3):    0.012393805 segundos
+    Intervalo interquartil:   0.000538380 segundos
+    Mínimo:                   0.011600220 segundos
+    Máximo:                   0.013223410 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.121999263 segundos
+    Desvio-padrão amostral:   0.004732698 segundos
+    Mediana:                  0.121149416 segundos
+    Mínimo:                   0.116032495 segundos
+    Máximo:                   0.132246618 segundos
+
+  Razão CPU/tempo real:       0.999705
+
+PIOR MERGE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.000791617 segundos (0.791617 ms)
+    Desvio-padrão amostral:   0.000095500 segundos (0.095500 ms)
+    Coeficiente de variação:  12.06%
+    IC95% da média:           [0.000746922, 0.000836313] segundos
+    Mediana:                  0.000765335 segundos
+    Primeiro quartil (Q1):    0.000728670 segundos
+    Terceiro quartil (Q3):    0.000800713 segundos
+    Intervalo interquartil:   0.000072043 segundos
+    Mínimo:                   0.000709930 segundos
+    Máximo:                   0.001114455 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.000791025 segundos (0.791025 ms)
+    Desvio-padrão amostral:   0.000095437 segundos (0.095437 ms)
+    Coeficiente de variação:  12.06%
+    IC95% da média:           [0.000746359, 0.000835691] segundos
+    Mediana:                  0.000764755 segundos
+    Primeiro quartil (Q1):    0.000728315 segundos
+    Terceiro quartil (Q3):    0.000799752 segundos
+    Intervalo interquartil:   0.000071437 segundos
+    Mínimo:                   0.000709470 segundos
+    Máximo:                   0.001113770 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.007916173 segundos
+    Desvio-padrão amostral:   0.000954998 segundos
+    Mediana:                  0.007653354 segundos
+    Mínimo:                   0.007099297 segundos
+    Máximo:                   0.011144551 segundos
+
+  Razão CPU/tempo real:       0.999252
+
+PIOR MERGE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.003972578 segundos (3.972578 ms)
+    Desvio-padrão amostral:   0.000259551 segundos (0.259551 ms)
+    Coeficiente de variação:  6.53%
+    IC95% da média:           [0.003851105, 0.004094052] segundos
+    Mediana:                  0.003882569 segundos
+    Primeiro quartil (Q1):    0.003804636 segundos
+    Terceiro quartil (Q3):    0.004105332 segundos
+    Intervalo interquartil:   0.000300696 segundos
+    Mínimo:                   0.003727112 segundos
+    Máximo:                   0.004532093 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.003970339 segundos (3.970339 ms)
+    Desvio-padrão amostral:   0.000257795 segundos (0.257795 ms)
+    Coeficiente de variação:  6.49%
+    IC95% da média:           [0.003849687, 0.004090990] segundos
+    Mediana:                  0.003881805 segundos
+    Primeiro quartil (Q1):    0.003803718 segundos
+    Terceiro quartil (Q3):    0.004100087 segundos
+    Intervalo interquartil:   0.000296370 segundos
+    Mínimo:                   0.003726050 segundos
+    Máximo:                   0.004521820 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.039725783 segundos
+    Desvio-padrão amostral:   0.002595508 segundos
+    Mediana:                  0.038825691 segundos
+    Mínimo:                   0.037271119 segundos
+    Máximo:                   0.045320931 segundos
+
+  Razão CPU/tempo real:       0.999436
+
+PIOR MERGE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.018195188 segundos (18.195188 ms)
+    Desvio-padrão amostral:   0.001332938 segundos (1.332938 ms)
+    Coeficiente de variação:  7.33%
+    IC95% da média:           [0.017571353, 0.018819022] segundos
+    Mediana:                  0.017969319 segundos
+    Primeiro quartil (Q1):    0.017473293 segundos
+    Terceiro quartil (Q3):    0.018292287 segundos
+    Intervalo interquartil:   0.000818994 segundos
+    Mínimo:                   0.017081982 segundos
+    Máximo:                   0.023244956 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.018189688 segundos (18.189688 ms)
+    Desvio-padrão amostral:   0.001332976 segundos (1.332976 ms)
+    Coeficiente de variação:  7.33%
+    IC95% da média:           [0.017565836, 0.018813540] segundos
+    Mediana:                  0.017967400 segundos
+    Primeiro quartil (Q1):    0.017468185 segundos
+    Terceiro quartil (Q3):    0.018286138 segundos
+    Intervalo interquartil:   0.000817952 segundos
+    Mínimo:                   0.017069480 segundos
+    Máximo:                   0.023235000 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.181951875 segundos
+    Desvio-padrão amostral:   0.013329378 segundos
+    Mediana:                  0.179693194 segundos
+    Mínimo:                   0.170819823 segundos
+    Máximo:                   0.232449561 segundos
+
+  Razão CPU/tempo real:       0.999698
+
+ALGORITMO: MERGE SORT
+--------------------------------------------------------------------------------
+
+ALEATÓRIA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001310446 segundos (1.310446 ms)
+    Desvio-padrão amostral:   0.000053531 segundos (0.053531 ms)
+    Coeficiente de variação:  4.08%
+    IC95% da média:           [0.001285392, 0.001335499] segundos
+    Mediana:                  0.001300137 segundos
+    Primeiro quartil (Q1):    0.001275514 segundos
+    Terceiro quartil (Q3):    0.001327005 segundos
+    Intervalo interquartil:   0.000051490 segundos
+    Mínimo:                   0.001230146 segundos
+    Máximo:                   0.001424549 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001309840 segundos (1.309840 ms)
+    Desvio-padrão amostral:   0.000053633 segundos (0.053633 ms)
+    Coeficiente de variação:  4.09%
+    IC95% da média:           [0.001284739, 0.001334940] segundos
+    Mediana:                  0.001299620 segundos
+    Primeiro quartil (Q1):    0.001274982 segundos
+    Terceiro quartil (Q3):    0.001326570 segundos
+    Intervalo interquartil:   0.000051588 segundos
+    Mínimo:                   0.001228000 segundos
+    Máximo:                   0.001424010 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.013104457 segundos
+    Desvio-padrão amostral:   0.000535312 segundos
+    Mediana:                  0.013001370 segundos
+    Mínimo:                   0.012301461 segundos
+    Máximo:                   0.014245486 segundos
+
+  Razão CPU/tempo real:       0.999538
+
+ALEATÓRIA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.007178524 segundos (7.178524 ms)
+    Desvio-padrão amostral:   0.000629503 segundos (0.629503 ms)
+    Coeficiente de variação:  8.77%
+    IC95% da média:           [0.006883908, 0.007473140] segundos
+    Mediana:                  0.006942050 segundos
+    Primeiro quartil (Q1):    0.006756408 segundos
+    Terceiro quartil (Q3):    0.007477681 segundos
+    Intervalo interquartil:   0.000721273 segundos
+    Mínimo:                   0.006466579 segundos
+    Máximo:                   0.009075655 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.007174546 segundos (7.174546 ms)
+    Desvio-padrão amostral:   0.000630432 segundos (0.630432 ms)
+    Coeficiente de variação:  8.79%
+    IC95% da média:           [0.006879495, 0.007469598] segundos
+    Mediana:                  0.006941120 segundos
+    Primeiro quartil (Q1):    0.006750490 segundos
+    Terceiro quartil (Q3):    0.007476508 segundos
+    Intervalo interquartil:   0.000726018 segundos
+    Mínimo:                   0.006464110 segundos
+    Máximo:                   0.009074670 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.071785237 segundos
+    Desvio-padrão amostral:   0.006295025 segundos
+    Mediana:                  0.069420505 segundos
+    Mínimo:                   0.064665789 segundos
+    Máximo:                   0.090756548 segundos
+
+  Razão CPU/tempo real:       0.999446
+
+ALEATÓRIA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.030603928 segundos (30.603928 ms)
+    Desvio-padrão amostral:   0.001168711 segundos (1.168711 ms)
+    Coeficiente de variação:  3.82%
+    IC95% da média:           [0.030056955, 0.031150902] segundos
+    Mediana:                  0.030311837 segundos
+    Primeiro quartil (Q1):    0.029869191 segundos
+    Terceiro quartil (Q3):    0.031189880 segundos
+    Intervalo interquartil:   0.001320689 segundos
+    Mínimo:                   0.028723306 segundos
+    Máximo:                   0.033921824 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.030596230 segundos (30.596230 ms)
+    Desvio-padrão amostral:   0.001167020 segundos (1.167020 ms)
+    Coeficiente de variação:  3.81%
+    IC95% da média:           [0.030050048, 0.031142412] segundos
+    Mediana:                  0.030309360 segundos
+    Primeiro quartil (Q1):    0.029865180 segundos
+    Terceiro quartil (Q3):    0.031171653 segundos
+    Intervalo interquartil:   0.001306473 segundos
+    Mínimo:                   0.028702310 segundos
+    Máximo:                   0.033914370 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.306039284 segundos
+    Desvio-padrão amostral:   0.011687106 segundos
+    Mediana:                  0.303118365 segundos
+    Mínimo:                   0.287233058 segundos
+    Máximo:                   0.339218238 segundos
+
+  Razão CPU/tempo real:       0.999748
+
+CRESCENTE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001349659 segundos (1.349659 ms)
+    Desvio-padrão amostral:   0.000245115 segundos (0.245115 ms)
+    Coeficiente de variação:  18.16%
+    IC95% da média:           [0.001234941, 0.001464376] segundos
+    Mediana:                  0.001252742 segundos
+    Primeiro quartil (Q1):    0.001169146 segundos
+    Terceiro quartil (Q3):    0.001384069 segundos
+    Intervalo interquartil:   0.000214923 segundos
+    Mínimo:                   0.001126465 segundos
+    Máximo:                   0.001932156 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001348805 segundos (1.348805 ms)
+    Desvio-padrão amostral:   0.000245174 segundos (0.245174 ms)
+    Coeficiente de variação:  18.18%
+    IC95% da média:           [0.001234061, 0.001463550] segundos
+    Mediana:                  0.001252155 segundos
+    Primeiro quartil (Q1):    0.001168420 segundos
+    Terceiro quartil (Q3):    0.001383300 segundos
+    Intervalo interquartil:   0.000214880 segundos
+    Mínimo:                   0.001125210 segundos
+    Máximo:                   0.001931520 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.013496585 segundos
+    Desvio-padrão amostral:   0.002451146 segundos
+    Mediana:                  0.012527422 segundos
+    Mínimo:                   0.011264654 segundos
+    Máximo:                   0.019321565 segundos
+
+  Razão CPU/tempo real:       0.999367
+
+CRESCENTE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.005744381 segundos (5.744381 ms)
+    Desvio-padrão amostral:   0.000268160 segundos (0.268160 ms)
+    Coeficiente de variação:  4.67%
+    IC95% da média:           [0.005618878, 0.005869884] segundos
+    Mediana:                  0.005675762 segundos
+    Primeiro quartil (Q1):    0.005582806 segundos
+    Terceiro quartil (Q3):    0.005796041 segundos
+    Intervalo interquartil:   0.000213235 segundos
+    Mínimo:                   0.005438934 segundos
+    Máximo:                   0.006492298 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.005741648 segundos (5.741648 ms)
+    Desvio-padrão amostral:   0.000269006 segundos (0.269006 ms)
+    Coeficiente de variação:  4.69%
+    IC95% da média:           [0.005615749, 0.005867547] segundos
+    Mediana:                  0.005674890 segundos
+    Primeiro quartil (Q1):    0.005581685 segundos
+    Terceiro quartil (Q3):    0.005785913 segundos
+    Intervalo interquartil:   0.000204228 segundos
+    Mínimo:                   0.005437910 segundos
+    Máximo:                   0.006491180 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.057443809 segundos
+    Desvio-padrão amostral:   0.002681601 segundos
+    Mediana:                  0.056757619 segundos
+    Mínimo:                   0.054389338 segundos
+    Máximo:                   0.064922980 segundos
+
+  Razão CPU/tempo real:       0.999524
+
+CRESCENTE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.028316855 segundos (28.316855 ms)
+    Desvio-padrão amostral:   0.005046604 segundos (5.046604 ms)
+    Coeficiente de variação:  17.82%
+    IC95% da média:           [0.025954971, 0.030678738] segundos
+    Mediana:                  0.026812976 segundos
+    Primeiro quartil (Q1):    0.025686823 segundos
+    Terceiro quartil (Q3):    0.027515665 segundos
+    Intervalo interquartil:   0.001828841 segundos
+    Mínimo:                   0.024820091 segundos
+    Máximo:                   0.043382168 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.028285821 segundos (28.285821 ms)
+    Desvio-padrão amostral:   0.004992312 segundos (4.992312 ms)
+    Coeficiente de variação:  17.65%
+    IC95% da média:           [0.025949346, 0.030622295] segundos
+    Mediana:                  0.026801695 segundos
+    Primeiro quartil (Q1):    0.025681627 segundos
+    Terceiro quartil (Q3):    0.027501508 segundos
+    Intervalo interquartil:   0.001819880 segundos
+    Mínimo:                   0.024817050 segundos
+    Máximo:                   0.043356850 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.283168546 segundos
+    Desvio-padrão amostral:   0.050466042 segundos
+    Mediana:                  0.268129761 segundos
+    Mínimo:                   0.248200912 segundos
+    Máximo:                   0.433821679 segundos
+
+  Razão CPU/tempo real:       0.998904
+
+INVERSA - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001189121 segundos (1.189121 ms)
+    Desvio-padrão amostral:   0.000139340 segundos (0.139340 ms)
+    Coeficiente de variação:  11.72%
+    IC95% da média:           [0.001123908, 0.001254334] segundos
+    Mediana:                  0.001141566 segundos
+    Primeiro quartil (Q1):    0.001103475 segundos
+    Terceiro quartil (Q3):    0.001216289 segundos
+    Intervalo interquartil:   0.000112814 segundos
+    Mínimo:                   0.001072115 segundos
+    Máximo:                   0.001618712 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001188353 segundos (1.188353 ms)
+    Desvio-padrão amostral:   0.000139455 segundos (0.139455 ms)
+    Coeficiente de variação:  11.74%
+    IC95% da média:           [0.001123086, 0.001253620] segundos
+    Mediana:                  0.001140730 segundos
+    Primeiro quartil (Q1):    0.001102890 segundos
+    Terceiro quartil (Q3):    0.001215692 segundos
+    Intervalo interquartil:   0.000112802 segundos
+    Mínimo:                   0.001071490 segundos
+    Máximo:                   0.001618250 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.011891214 segundos
+    Desvio-padrão amostral:   0.001393399 segundos
+    Mediana:                  0.011415657 segundos
+    Mínimo:                   0.010721148 segundos
+    Máximo:                   0.016187123 segundos
+
+  Razão CPU/tempo real:       0.999354
+
+INVERSA - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.006014580 segundos (6.014580 ms)
+    Desvio-padrão amostral:   0.000554168 segundos (0.554168 ms)
+    Coeficiente de variação:  9.21%
+    IC95% da média:           [0.005755221, 0.006273938] segundos
+    Mediana:                  0.005837920 segundos
+    Primeiro quartil (Q1):    0.005656078 segundos
+    Terceiro quartil (Q3):    0.006286566 segundos
+    Intervalo interquartil:   0.000630489 segundos
+    Mínimo:                   0.005290093 segundos
+    Máximo:                   0.007539074 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.006011599 segundos (6.011599 ms)
+    Desvio-padrão amostral:   0.000552296 segundos (0.552296 ms)
+    Coeficiente de variação:  9.19%
+    IC95% da média:           [0.005753117, 0.006270081] segundos
+    Mediana:                  0.005836860 segundos
+    Primeiro quartil (Q1):    0.005655192 segundos
+    Terceiro quartil (Q3):    0.006282615 segundos
+    Intervalo interquartil:   0.000627423 segundos
+    Mínimo:                   0.005289240 segundos
+    Máximo:                   0.007538050 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.060145795 segundos
+    Desvio-padrão amostral:   0.005541677 segundos
+    Mediana:                  0.058379201 segundos
+    Mínimo:                   0.052900926 segundos
+    Máximo:                   0.075390735 segundos
+
+  Razão CPU/tempo real:       0.999504
+
+INVERSA - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.026882090 segundos (26.882090 ms)
+    Desvio-padrão amostral:   0.001804984 segundos (1.804984 ms)
+    Coeficiente de variação:  6.71%
+    IC95% da média:           [0.026037331, 0.027726848] segundos
+    Mediana:                  0.026574991 segundos
+    Primeiro quartil (Q1):    0.026009676 segundos
+    Terceiro quartil (Q3):    0.026857187 segundos
+    Intervalo interquartil:   0.000847511 segundos
+    Mínimo:                   0.025159096 segundos
+    Máximo:                   0.032911873 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.026873483 segundos (26.873483 ms)
+    Desvio-padrão amostral:   0.001804859 segundos (1.804859 ms)
+    Coeficiente de variação:  6.72%
+    IC95% da média:           [0.026028783, 0.027718182] segundos
+    Mediana:                  0.026563925 segundos
+    Primeiro quartil (Q1):    0.026006555 segundos
+    Terceiro quartil (Q3):    0.026844370 segundos
+    Intervalo interquartil:   0.000837815 segundos
+    Mínimo:                   0.025155910 segundos
+    Máximo:                   0.032907500 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.268820897 segundos
+    Desvio-padrão amostral:   0.018049841 segundos
+    Mediana:                  0.265749909 segundos
+    Mínimo:                   0.251590965 segundos
+    Máximo:                   0.329118732 segundos
+
+  Razão CPU/tempo real:       0.999680
+
+MELHOR QUICK - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001322848 segundos (1.322848 ms)
+    Desvio-padrão amostral:   0.000170003 segundos (0.170003 ms)
+    Coeficiente de variação:  12.85%
+    IC95% da média:           [0.001243284, 0.001402412] segundos
+    Mediana:                  0.001245767 segundos
+    Primeiro quartil (Q1):    0.001208862 segundos
+    Terceiro quartil (Q3):    0.001451827 segundos
+    Intervalo interquartil:   0.000242965 segundos
+    Mínimo:                   0.001143226 segundos
+    Máximo:                   0.001713504 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001322184 segundos (1.322184 ms)
+    Desvio-padrão amostral:   0.000169998 segundos (0.169998 ms)
+    Coeficiente de variação:  12.86%
+    IC95% da média:           [0.001242623, 0.001401745] segundos
+    Mediana:                  0.001244935 segundos
+    Primeiro quartil (Q1):    0.001208437 segundos
+    Terceiro quartil (Q3):    0.001451242 segundos
+    Intervalo interquartil:   0.000242805 segundos
+    Mínimo:                   0.001142860 segundos
+    Máximo:                   0.001712900 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.013228481 segundos
+    Desvio-padrão amostral:   0.001700030 segundos
+    Mediana:                  0.012457671 segundos
+    Mínimo:                   0.011432257 segundos
+    Máximo:                   0.017135036 segundos
+
+  Razão CPU/tempo real:       0.999498
+
+MELHOR QUICK - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.006197321 segundos (6.197321 ms)
+    Desvio-padrão amostral:   0.000283103 segundos (0.283103 ms)
+    Coeficiente de variação:  4.57%
+    IC95% da média:           [0.006064825, 0.006329817] segundos
+    Mediana:                  0.006122254 segundos
+    Primeiro quartil (Q1):    0.006017533 segundos
+    Terceiro quartil (Q3):    0.006384033 segundos
+    Intervalo interquartil:   0.000366500 segundos
+    Mínimo:                   0.005798020 segundos
+    Máximo:                   0.006951995 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.006194976 segundos (6.194976 ms)
+    Desvio-padrão amostral:   0.000281583 segundos (0.281583 ms)
+    Coeficiente de variação:  4.55%
+    IC95% da média:           [0.006063192, 0.006326761] segundos
+    Mediana:                  0.006121350 segundos
+    Primeiro quartil (Q1):    0.006016625 segundos
+    Terceiro quartil (Q3):    0.006383187 segundos
+    Intervalo interquartil:   0.000366562 segundos
+    Mínimo:                   0.005796820 segundos
+    Máximo:                   0.006939200 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.061973211 segundos
+    Desvio-padrão amostral:   0.002831034 segundos
+    Mediana:                  0.061222540 segundos
+    Mínimo:                   0.057980196 segundos
+    Máximo:                   0.069519954 segundos
+
+  Razão CPU/tempo real:       0.999622
+
+MELHOR QUICK - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.029697940 segundos (29.697940 ms)
+    Desvio-padrão amostral:   0.001258791 segundos (1.258791 ms)
+    Coeficiente de variação:  4.24%
+    IC95% da média:           [0.029108808, 0.030287073] segundos
+    Mediana:                  0.029747856 segundos
+    Primeiro quartil (Q1):    0.028934862 segundos
+    Terceiro quartil (Q3):    0.030328641 segundos
+    Intervalo interquartil:   0.001393779 segundos
+    Mínimo:                   0.027498565 segundos
+    Máximo:                   0.032897868 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.029682596 segundos (29.682596 ms)
+    Desvio-padrão amostral:   0.001254348 segundos (1.254348 ms)
+    Coeficiente de variação:  4.23%
+    IC95% da média:           [0.029095543, 0.030269649] segundos
+    Mediana:                  0.029743945 segundos
+    Primeiro quartil (Q1):    0.028927202 segundos
+    Terceiro quartil (Q3):    0.030286945 segundos
+    Intervalo interquartil:   0.001359743 segundos
+    Mínimo:                   0.027486630 segundos
+    Máximo:                   0.032881680 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.296979402 segundos
+    Desvio-padrão amostral:   0.012587915 segundos
+    Mediana:                  0.297478568 segundos
+    Mínimo:                   0.274985647 segundos
+    Máximo:                   0.328978684 segundos
+
+  Razão CPU/tempo real:       0.999483
+
+PIOR MERGE - P_1000 (n = 1.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.001417865 segundos (1.417865 ms)
+    Desvio-padrão amostral:   0.000234549 segundos (0.234549 ms)
+    Coeficiente de variação:  16.54%
+    IC95% da média:           [0.001308092, 0.001527637] segundos
+    Mediana:                  0.001345759 segundos
+    Primeiro quartil (Q1):    0.001253877 segundos
+    Terceiro quartil (Q3):    0.001428062 segundos
+    Intervalo interquartil:   0.000174185 segundos
+    Mínimo:                   0.001211217 segundos
+    Máximo:                   0.001931927 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.001415826 segundos (1.415826 ms)
+    Desvio-padrão amostral:   0.000231402 segundos (0.231402 ms)
+    Coeficiente de variação:  16.34%
+    IC95% da média:           [0.001307526, 0.001524125] segundos
+    Mediana:                  0.001345230 segundos
+    Primeiro quartil (Q1):    0.001253017 segundos
+    Terceiro quartil (Q3):    0.001427605 segundos
+    Intervalo interquartil:   0.000174588 segundos
+    Mínimo:                   0.001210830 segundos
+    Máximo:                   0.001924140 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.014178646 segundos
+    Desvio-padrão amostral:   0.002345488 segundos
+    Mediana:                  0.013457586 segundos
+    Mínimo:                   0.012112167 segundos
+    Máximo:                   0.019319266 segundos
+
+  Razão CPU/tempo real:       0.998562
+
+PIOR MERGE - M_4000 (n = 4.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.006731674 segundos (6.731674 ms)
+    Desvio-padrão amostral:   0.001291372 segundos (1.291372 ms)
+    Coeficiente de variação:  19.18%
+    IC95% da média:           [0.006127293, 0.007336055] segundos
+    Mediana:                  0.006484574 segundos
+    Primeiro quartil (Q1):    0.006141941 segundos
+    Terceiro quartil (Q3):    0.006812248 segundos
+    Intervalo interquartil:   0.000670307 segundos
+    Mínimo:                   0.005852990 segundos
+    Máximo:                   0.011969434 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.006729181 segundos (6.729181 ms)
+    Desvio-padrão amostral:   0.001291018 segundos (1.291018 ms)
+    Coeficiente de variação:  19.19%
+    IC95% da média:           [0.006124966, 0.007333396] segundos
+    Mediana:                  0.006483070 segundos
+    Primeiro quartil (Q1):    0.006139653 segundos
+    Terceiro quartil (Q3):    0.006811185 segundos
+    Intervalo interquartil:   0.000671533 segundos
+    Mínimo:                   0.005838250 segundos
+    Máximo:                   0.011964340 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.067316744 segundos
+    Desvio-padrão amostral:   0.012913724 segundos
+    Mediana:                  0.064845739 segundos
+    Mínimo:                   0.058529903 segundos
+    Máximo:                   0.119694343 segundos
+
+  Razão CPU/tempo real:       0.999630
+
+PIOR MERGE - G_16000 (n = 16.000):
+--------------------------------------------------------------------------------
+  Observações: 20
+  Função teórica de referência: n*log2(n)
+
+  TEMPO REAL POR VETOR:
+    Média:                    0.030537572 segundos (30.537572 ms)
+    Desvio-padrão amostral:   0.001381427 segundos (1.381427 ms)
+    Coeficiente de variação:  4.52%
+    IC95% da média:           [0.029891045, 0.031184100] segundos
+    Mediana:                  0.030237283 segundos
+    Primeiro quartil (Q1):    0.029773586 segundos
+    Terceiro quartil (Q3):    0.031398156 segundos
+    Intervalo interquartil:   0.001624570 segundos
+    Mínimo:                   0.028413067 segundos
+    Máximo:                   0.033700961 segundos
+
+  TEMPO DE CPU POR VETOR:
+    Média:                    0.030522396 segundos (30.522396 ms)
+    Desvio-padrão amostral:   0.001381460 segundos (1.381460 ms)
+    Coeficiente de variação:  4.53%
+    IC95% da média:           [0.029875853, 0.031168939] segundos
+    Mediana:                  0.030232945 segundos
+    Primeiro quartil (Q1):    0.029758118 segundos
+    Terceiro quartil (Q3):    0.031389810 segundos
+    Intervalo interquartil:   0.001631692 segundos
+    Mínimo:                   0.028408250 segundos
+    Máximo:                   0.033697890 segundos
+
+  TEMPO REAL DO BLOCO DE DEZ VETORES:
+    Média:                    0.305375723 segundos
+    Desvio-padrão amostral:   0.013814265 segundos
+    Mediana:                  0.302372825 segundos
+    Mínimo:                   0.284130671 segundos
+    Máximo:                   0.337009610 segundos
+
+  Razão CPU/tempo real:       0.999503
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================
